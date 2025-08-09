@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- #region header -->
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -53,17 +54,19 @@
         </address>
       </div>
     </header>
+    <!-- #endregion -->
 
     <main>
-      <!-- hero -->
+      <!-- #region hero -->
       <section class="section-hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button-hero" type="button">Order Service</button>
         </div>
       </section>
+      <!-- #endregion -->
 
-      <!-- benefits -->
+      <!-- #region benefits -->
       <section class="section-benefits">
         <div class="container benefits-container">
           <h2 class="visually-hidden">Benefits</h2>
@@ -119,8 +122,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
 
-      <!-- team -->
+      <!-- #region team -->
       <section class="section-team">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
@@ -291,8 +295,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
 
-      <!-- portfolio -->
+      <!-- #region portfolio -->
       <section class="section-portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -415,9 +420,10 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
     </main>
 
-    <!-- footer -->
+    <!-- #region footer -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-text-box">
@@ -458,7 +464,96 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe-box">
+          <label class="footer-subscribe-label">
+            Subscribe
+            <input
+              class="footer-subscribe-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+          /></label>
+          <button class="footer-subscribe-btn" type="submit">
+            Subscribe
+            <svg class="footer-subscribe-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
+    <!-- #endregion -->
+
+    <!-- #region modal windows -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <svg class="modal-btn-close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-callback-text">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="modal-form">
+          <label class="modal-label">
+            Name
+            <div class="modal-label-icon-box">
+              <input class="modal-input" type="text" name="username" />
+              <svg class="modal-label-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg></div
+          ></label>
+
+          <label class="modal-label">
+            Phone
+            <div class="modal-label-icon-box">
+              <input class="modal-input" type="tel" name="Phone" />
+              <svg class="modal-label-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg></div
+          ></label>
+
+          <label class="modal-label">
+            Email
+            <div class="modal-label-icon-box">
+              <input class="modal-input" type="email" name="email" />
+              <svg class="modal-label-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg></div
+          ></label>
+
+          <label class="modal-label">
+            Comment
+            <textarea
+              class="modal-input-area"
+              type="text"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <div class="modal-privacy">
+            <input
+              class="modal-privacy-checkbox visually-hidden"
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+            />
+            <label class="modal-privacy-label" for="privacy">
+              <span class="modal-privacy-check"
+                ><svg class="modal-privacy-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg
+              ></span>
+              I accept the terms and conditions of the
+              <a class="modal-privacy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-btn-send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion -->
   </body>
 </html>
